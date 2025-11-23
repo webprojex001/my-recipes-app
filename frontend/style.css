@@ -1,0 +1,109 @@
+/* style.css */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: #00529b; /* Biru ala Indomart */
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.search-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+#ingredient-input {
+    flex-grow: 1;
+    padding: 12px 15px;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    transition: border-color 0.3s;
+}
+
+#ingredient-input:focus {
+    border-color: #00529b;
+    outline: none;
+}
+
+#search-btn {
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #e21c23; /* Merah ala Alfamart */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#search-btn:hover {
+    background-color: #c01a1f;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #eee;
+    margin-bottom: 30px;
+}
+
+/* Penataan Kartu Resep */
+.recipe-card {
+    background: #fafafa;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+}
+
+.recipe-card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+.recipe-content h3 {
+    margin-top: 0;
+    color: #00529b;
+}
+
+.recipe-content p {
+    margin-bottom: 10px;
+}
+
+.recipe-content strong {
+    color: #333;
+}
